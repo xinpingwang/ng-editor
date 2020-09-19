@@ -1,6 +1,11 @@
 {
   "name": "root",
   "private": true,
+  "scripts": {
+    "build:ckeditor-build-bear": "lerna run --scope ckeditor-build-bear --stream build",
+    "build:ng-ckeditor-app": "lerna run --scope ng-ckeditor --stream build",
+    "start:ng-ckeditor-app": "lerna run --scope ng-ckeditor --stream start"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }

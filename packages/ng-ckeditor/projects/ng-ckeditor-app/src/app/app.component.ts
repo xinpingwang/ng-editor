@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import * as ClassicEditor from "ckeditor-build-bear";
+import * as BearEditor from "ckeditor-build-bear";
 
 @Component({
   selector: "app-root",
@@ -8,5 +8,5 @@ import * as ClassicEditor from "ckeditor-build-bear";
 })
 export class AppComponent {
   title = "ng-ckeditor-app";
-  editor = ClassicEditor;
+  editor = BearEditor;
 }

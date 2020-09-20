@@ -1,7 +1,7 @@
 {
   "name": "ckeditor-build-bear",
   "version": "0.0.0",
-  "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
+  "description": "The bear editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
     "ckeditor",
@@ -60,14 +60,12 @@
     "node": ">=12.0.0",
     "npm": ">=5.7.1"
   },
-  "author": "CKSource (http://cksource.com/)",
-  "license": "GPL-2.0-or-later",
-  "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "homepage": "https://github.com/xinpingwang/ng-editor",
+  "bugs": "https://github.com/xinpingwang/ng-editor/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
-    "directory": "packages/ckeditor5-build-classic"
+    "url": "https://github.com/xinpingwang/ng-editor.git",
+    "directory": "packages/ckeditor-build-bear"
   },
   "scripts": {
     "build": "webpack --mode production",

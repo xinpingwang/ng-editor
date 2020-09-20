@@ -45,14 +45,16 @@
     "@ckeditor/ckeditor5-paragraph": "^22.0.0",
     "@ckeditor/ckeditor5-paste-from-office": "^22.0.0",
     "@ckeditor/ckeditor5-table": "^22.0.0",
-    "@ckeditor/ckeditor5-typing": "^22.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^22.0.0",
+    "@ckeditor/ckeditor5-typing": "^22.0.0",
+    "html-webpack-plugin": "^4.4.1",
     "postcss-loader": "^3.0.0",
     "raw-loader": "^4.0.1",
     "style-loader": "^1.2.1",
     "terser-webpack-plugin": "^3.0.2",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   },
   "engines": {
     "node": ">=12.0.0",
@@ -69,6 +71,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
+    "start": "webpack-dev-server",
     "preversion": "npm run build"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "ckeditor-build-bear",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The bear editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "ckeditor5-build",
@@ -66,5 +66,8 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server",
     "preversion": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }

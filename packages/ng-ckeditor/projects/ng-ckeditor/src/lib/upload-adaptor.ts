@@ -9,7 +9,7 @@ export class Base64UploadAdaptor extends UploadAdaptor {
 
   upload(file: File) {
     return new Promise<string>((resolve, reject) => {
-      this.reader = new window.FileReader();
+      this.reader = new FileReader();
       this.reader.addEventListener("load", () => {
         resolve(String(this.reader.result));
       });

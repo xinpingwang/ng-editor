@@ -3,5 +3,6 @@
   "dest": "../../dist/ng-ckeditor",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": ["@ckeditor/ckeditor5-watchdog", "ckeditor-build-bear"]
 }

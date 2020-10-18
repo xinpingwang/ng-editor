@@ -14,6 +14,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 
 import EditorWatchdog from "@ckeditor/ckeditor5-watchdog/src/editorwatchdog";
 
+import { UploadAdaptor, Base64UploadAdaptor } from "./upload-adaptor";
 import { CKEditor5 } from "./ckeditor";
 import uid from "./uid";
 
@@ -37,6 +38,8 @@ export class CKEditorComponent implements AfterViewInit, OnDestroy, ControlValue
    * The reference to the DOM element created by the component.
    */
   private elementRef!: ElementRef<HTMLElement>;
+
+  @Input() uploadAdaptor: UploadAdaptor;
 
   /**
    * The constructor of the editor to be used for the instance of the component.
@@ -333,6 +336,10 @@ export class CKEditorComponent implements AfterViewInit, OnDestroy, ControlValue
     if (this.data && this.config.initialData) {
       throw new Error("Editor data should be provided either using `config.initialData` or `data` properties.");
     }
+
+    let uploadAdaptor = this.uploadAdaptor || Base64UploadAdaptor;
+
+    Object.assign(this.config, { customUploadAdaptor: { adaptor: uploadAdaptor } });
 
     // Merge two possible ways of providing data into the `config.initialData` field.
     return {
